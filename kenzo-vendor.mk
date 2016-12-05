@@ -18,13 +18,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/xiaomi/kenzo/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/xiaomi/kenzo/proprietary/bin/cnd:system/bin/cnd \
+    vendor/xiaomi/kenzo/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/xiaomi/kenzo/proprietary/bin/consumerird:system/bin/consumerird \
     vendor/xiaomi/kenzo/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/kenzo/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/xiaomi/kenzo/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/xiaomi/kenzo/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/xiaomi/kenzo/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/xiaomi/kenzo/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/xiaomi/kenzo/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/xiaomi/kenzo/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/xiaomi/kenzo/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/bin/radish:system/bin/radish \
     vendor/xiaomi/kenzo/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/xiaomi/kenzo/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
+    vendor/xiaomi/kenzo/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/xiaomi/kenzo/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/xiaomi/kenzo/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb \
     vendor/xiaomi/kenzo/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_General_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_General_cal.acdb \
@@ -113,16 +114,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/etc/firmware/venus-v1.mdt:system/etc/firmware/venus-v1.mdt \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/xiaomi/kenzo/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
-    vendor/xiaomi/kenzo/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/xiaomi/kenzo/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/xiaomi/kenzo/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/kenzo/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/kenzo/proprietary/etc/pp_calib_data_sharp_r63315_1080p_video_mode_dsi_panel.xml:system/etc/pp_calib_data_sharp_r63315_1080p_video_mode_dsi_panel.xml \
     vendor/xiaomi/kenzo/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/kenzo/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/xiaomi/kenzo/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
+    vendor/xiaomi/kenzo/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/xiaomi/kenzo/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/xiaomi/kenzo/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/xiaomi/kenzo/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
@@ -138,13 +140,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/kenzo/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/xiaomi/kenzo/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/xiaomi/kenzo/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/xiaomi/kenzo/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/xiaomi/kenzo/proprietary/lib/libRecoFace.so:system/lib/libRecoFace.so \
+    vendor/xiaomi/kenzo/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/xiaomi/kenzo/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
     vendor/xiaomi/kenzo/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/xiaomi/kenzo/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/xiaomi/kenzo/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/xiaomi/kenzo/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/xiaomi/kenzo/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/xiaomi/kenzo/proprietary/vendor/Diag.cfg:system/vendor/Diag.cfg \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
@@ -158,12 +163,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/hw/keystore.msm8952.so:system/vendor/lib64/hw/keystore.msm8952.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
@@ -175,7 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
@@ -197,13 +203,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libloc_xtra.so:system/vendor/lib64/libloc_xtra.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
@@ -211,12 +214,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libmm-dspp-utils.so:system/vendor/lib64/libmm-dspp-utils.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libmm-qdcm-diag.so:system/vendor/lib64/libmm-qdcm-diag.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
@@ -229,10 +232,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
@@ -259,9 +259,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
@@ -277,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:system/vendor/lib/hw/sound_trigger.primary.msm8952.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
@@ -299,7 +297,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
@@ -308,6 +308,60 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:system/vendor/lib/libchromatix_csidtg_cpp_preview.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:system/vendor/lib/libchromatix_csidtg_postproc.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_csidtg_preview.so:system/vendor/lib/libchromatix_csidtg_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_common.so:system/vendor/lib/libchromatix_ov16880_f16v01a_common.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_ds_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_liveshot.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_preview.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_snapshot.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_us_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_video_full.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_video_full.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_cpp_video.so:system/vendor/lib/libchromatix_ov16880_f16v01a_cpp_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_default_preview_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_default_preview_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_default_video_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_default_video_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_default_video.so:system/vendor/lib/libchromatix_ov16880_f16v01a_default_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_hfr_120_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_hfr_120_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_hfr_120.so:system/vendor/lib/libchromatix_ov16880_f16v01a_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_hfr_60_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_hfr_60_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_hfr_60.so:system/vendor/lib/libchromatix_ov16880_f16v01a_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_hfr_90_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_hfr_90_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_hfr_90.so:system/vendor/lib/libchromatix_ov16880_f16v01a_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_liveshot.so:system/vendor/lib/libchromatix_ov16880_f16v01a_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_postproc.so:system/vendor/lib/libchromatix_ov16880_f16v01a_postproc.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_preview.so:system/vendor/lib/libchromatix_ov16880_f16v01a_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_snapshot.so:system/vendor/lib/libchromatix_ov16880_f16v01a_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_video_full.so:system/vendor/lib/libchromatix_ov16880_f16v01a_video_full.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_zsl_preview_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_zsl_preview_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_f16v01a_zsl_video_dw9718s_f16v01a.so:system/vendor/lib/libchromatix_ov16880_f16v01a_zsl_video_dw9718s_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_common.so:system/vendor/lib/libchromatix_ov16880_omida05_common.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_ds_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_liveshot.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_preview.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_snapshot.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_us_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_video_full.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_video_full.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_cpp_video.so:system/vendor/lib/libchromatix_ov16880_omida05_cpp_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_default_preview_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_default_preview_dw9761b_omida05.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_default_video_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_default_video_dw9761b_omida05.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_default_video.so:system/vendor/lib/libchromatix_ov16880_omida05_default_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_hfr_120_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_hfr_120_dw9761b_omida05.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_hfr_120.so:system/vendor/lib/libchromatix_ov16880_omida05_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_hfr_60_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_hfr_60_dw9761b_omida05.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_hfr_60.so:system/vendor/lib/libchromatix_ov16880_omida05_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_hfr_90_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_hfr_90_dw9761b_omida05.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_hfr_90.so:system/vendor/lib/libchromatix_ov16880_omida05_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_liveshot.so:system/vendor/lib/libchromatix_ov16880_omida05_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_postproc.so:system/vendor/lib/libchromatix_ov16880_omida05_postproc.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_preview.so:system/vendor/lib/libchromatix_ov16880_omida05_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_snapshot.so:system/vendor/lib/libchromatix_ov16880_omida05_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_video_full.so:system/vendor/lib/libchromatix_ov16880_omida05_video_full.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_zsl_preview_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_zsl_preview_dw9761b_omida05.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov16880_omida05_zsl_video_dw9761b_omida05.so:system/vendor/lib/libchromatix_ov16880_omida05_zsl_video_dw9761b_omida05.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov5670_a3_default_preview.so:system/vendor/lib/libchromatix_ov5670_a3_default_preview.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov5670_a3_default_video.so:system/vendor/lib/libchromatix_ov5670_a3_default_video.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_ov5670_a3_hfr_120.so:system/vendor/lib/libchromatix_ov5670_a3_hfr_120.so \
@@ -485,11 +539,60 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k3p3_omida01_postproc.so:system/vendor/lib/libchromatix_s5k3p3_omida01_postproc.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k3p3_omida01_preview.so:system/vendor/lib/libchromatix_s5k3p3_omida01_preview.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k3p3_omida01_snapshot.so:system/vendor/lib/libchromatix_s5k3p3_omida01_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_a3_default_preview.so:system/vendor/lib/libchromatix_s5k5e8_yx13_a3_default_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_a3_default_video.so:system/vendor/lib/libchromatix_s5k5e8_yx13_a3_default_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_a3_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_yx13_a3_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_a3_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_yx13_a3_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_a3_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_yx13_a3_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_common.so:system/vendor/lib/libchromatix_s5k5e8_yx13_common.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_ds_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_us_chromatix.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_us_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_yx13_cpp_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_default_video.so:system/vendor/lib/libchromatix_s5k5e8_yx13_default_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_yx13_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_yx13_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_yx13_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_yx13_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_postproc.so:system/vendor/lib/libchromatix_s5k5e8_yx13_postproc.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_preview.so:system/vendor/lib/libchromatix_s5k5e8_yx13_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_yx13_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_zsl_preview.so:system/vendor/lib/libchromatix_s5k5e8_yx13_zsl_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_yx13_zsl_video.so:system/vendor/lib/libchromatix_s5k5e8_yx13_zsl_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_default_preview.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_default_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_default_video.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_default_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_a3_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_common.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_common.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_ds_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_us_chromatix.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_us_chromatix.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_cpp_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_default_video.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_default_video.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_hfr_120.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_hfr_60.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_hfr_90.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_liveshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_postproc.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_postproc.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_preview.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_snapshot.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_zsl_preview.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_zsl_preview.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libchromatix_s5k5e8_z5e8yab_zsl_video.so:system/vendor/lib/libchromatix_s5k5e8_z5e8yab_zsl_video.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
@@ -519,11 +622,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
@@ -587,6 +688,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov16880_f16v01a_eeprom.so:system/vendor/lib/libmmcamera_ov16880_f16v01a_eeprom.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov16880_f16v01a.so:system/vendor/lib/libmmcamera_ov16880_f16v01a.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov16880_omida05_eeprom.so:system/vendor/lib/libmmcamera_ov16880_omida05_eeprom.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov16880_omida05.so:system/vendor/lib/libmmcamera_ov16880_omida05.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov5670_d5v01g.so:system/vendor/lib/libmmcamera_ov5670_d5v01g.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov5670_omi5f06.so:system/vendor/lib/libmmcamera_ov5670_omi5f06.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_ov5670_polaris.so:system/vendor/lib/libmmcamera_ov5670_polaris.so \
@@ -600,6 +705,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_s5k3p3_gt24c64_eeprom.so:system/vendor/lib/libmmcamera_s5k3p3_gt24c64_eeprom.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_s5k3p3_omida01_eeprom.so:system/vendor/lib/libmmcamera_s5k3p3_omida01_eeprom.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_s5k3p3_omida01.so:system/vendor/lib/libmmcamera_s5k3p3_omida01.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_s5k5e8_yx13.so:system/vendor/lib/libmmcamera_s5k5e8_yx13.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_s5k5e8_z5e8yab_eeprom.so:system/vendor/lib/libmmcamera_s5k5e8_z5e8yab_eeprom.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_s5k5e8_z5e8yab.so:system/vendor/lib/libmmcamera_s5k5e8_z5e8yab.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_sunny_omi5f06_eeprom.so:system/vendor/lib/libmmcamera_sunny_omi5f06_eeprom.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
@@ -613,6 +721,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmsw_detail_enhancement.so:system/vendor/lib/libmmsw_detail_enhancement.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmsw_math.so:system/vendor/lib/libmmsw_math.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmsw_opencl.so:system/vendor/lib/libmmsw_opencl.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/libmmsw_platform.so:system/vendor/lib/libmmsw_platform.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmorpho_easy_hdr.so:system/vendor/lib/libmorpho_easy_hdr.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmorpho_hdr_checker.so:system/vendor/lib/libmorpho_hdr_checker.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libmorpho_image_stab4.so:system/vendor/lib/libmorpho_image_stab4.so \
@@ -644,8 +756,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
@@ -664,9 +774,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
-    vendor/xiaomi/kenzo/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libpanorama_skel.so:system/vendor/lib/rfsa/adsp/libpanorama_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/xiaomi/kenzo/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
@@ -678,11 +795,11 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
     libtime_genoff \
+    datastatusnotification \
+    fastdormancy \
     shutdownlistener \
     TimeService \
-    CNEService \
-    com.qualcomm.location \
     qcrilmsgtunnel \
-    QtiTetherService \
+    colorservice \
     qcnvitems \
     qcrilhook
